@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root{
+  --primary:#0367A6;
+  --secondary:hsl(16, 89%, 55%);;
+  --tertiary:#fff;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
