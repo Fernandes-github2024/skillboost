@@ -2,8 +2,9 @@
 
 :root{
   --primary:#0367A6;
-  --secondary:hsl(16, 89%, 55%);;
-  --tertiary:#fff;
+  --secondary:#f25d26;;
+  --tertiary:#04C4D9;
+  --background:#F2F2F2;
 }
 
 body {

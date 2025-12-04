@@ -8,7 +8,7 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
   return (
-    <nav className="w-full sticky top-0 left-0 z-50 bg-[var(--tertiary)] lg:shadow-md">
+    <nav className="w-full sticky top-0 left-0 z-50 bg-[#fff] lg:shadow-md">
       {/*Desktop*/}
       <div className="shadow-[2px_2px_5px_0_rgba(0,0,0,0.1)] lg:shadow-none flex items-center justify-between p-4 sm:p-6 lg:p-8">
         <div>
@@ -18,12 +18,12 @@ export default function Navbar() {
             </h1>
           </Link>
         </div>
-        <ul className="hidden lg:flex gap-2">
+        <ul className="hidden lg:flex gap-8">
           {menuLinks.map((link) => (
             <li key={link.id}>
               <Link
                 href={link.href}
-                className="tracking-wide hover:text-[var(--secondary)]"
+                className="tracking-wide text-sm hover:text-[var(--secondary)]"
               >
                 {link.label}
               </Link>
@@ -31,10 +31,10 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="hidden lg:flex gap-2">
-          <button className="tracking-wide py-2 px-4 bg-[var(--primary)] rounded-md cursor-pointer">
+          <button className="tracking-wide text-sm text-white py-2 px-4 bg-[var(--primary)] hover:bg-[var(--primary)]/90 rounded-md cursor-pointer">
             Entrar
           </button>
-          <button className="tracking-wide py-2 px-4 bg-[var(--secondary)] rounded-md cursor-pointer">
+          <button className="tracking-wide text-sm text-white py-2 px-4 bg-[var(--secondary)] hover:bg-[var(--secondary)]/90 rounded-md cursor-pointer">
             Inscrever-se
           </button>
         </div>
@@ -50,8 +50,8 @@ export default function Navbar() {
           <div className="min-h-screen">
             <ul className="flex flex-col gap-2 p-4 sm:p-6 lg:p-8">
               {menuLinks.map((link) => (
-                <li key={link.id} className="py-2 px-12 -mx-8 hover:bg-[var(--secondary)] shadow-[2px_2px_5px_0_rgba(0,0,0,0.1)] cursor-pointer">
-                  <Link href={link.href} className="">
+                <li key={link.id} className="py-2 px-12 bg-[var(--background)] hover:bg-[var(--secondary)] hover:text-white rounded-md cursor-pointer">
+                  <Link href={link.href} className="text-sm tracking-wide">
                     {link.label}
                   </Link>
                 </li>
@@ -59,10 +59,10 @@ export default function Navbar() {
             </ul>
 
             <div className="flex flex-col gap-2 p-4">
-              <button className="tracking-wide py-2 px-4 bg-[var(--primary)] rounded-md cursor-pointer">
+              <button className="tracking-wide text-sm text-white py-2 px-4 bg-[var(--primary)] hover:bg-[var(--primary)]/90 rounded-md cursor-pointer">
                 Entrar
               </button>
-              <button className="tracking-wide py-2 px-4 bg-[var(--secondary)] rounded-md cursor-pointer">
+              <button className="tracking-wide text-sm text-white py-2 px-4 bg-[var(--secondary)] hover:bg-[var(--secondary)]/90 rounded-md cursor-pointer">
                 Inscrever-se
               </button>
             </div>
