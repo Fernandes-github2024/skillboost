@@ -14,7 +14,7 @@ export default function Navbar() {
         <div>
           <Link href="/">
             <h1 className="text-xl lg:text-2xl font-extrabold text-[var(--primary)]">
-              SKILL<span className="text-[var(--secondary)]">BOOST</span>
+              Skill<span className="text-[var(--secondary)]">Boost</span>
             </h1>
           </Link>
         </div>
