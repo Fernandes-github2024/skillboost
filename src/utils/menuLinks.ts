@@ -1,36 +1,40 @@
+import {
+  RiHome5Line,
+  RiUser3Line,
+  RiBookMarkedLine,
+  RiChatQuoteLine,
+  RiPhoneLine
+} from "react-icons/ri";
+
 export const menuLinks = [
   {
     id: 1,
-    name: "Início",
     label: "Início",
     href: "/",
+    icon: RiHome5Line,
   },
-
   {
     id: 2,
-    name: "Sobre",
     label: "Sobre",
-    href: "/",
+    href: "/sobre",
+    icon: RiUser3Line,
   },
-
   {
     id: 3,
-    name: "Cursos",
     label: "Cursos",
-    href: "/",
+    href: "/cursos",
+    icon: RiBookMarkedLine,
   },
-
   {
     id: 4,
-    name: "Depoimentos",
     label: "Depoimentos",
-    href: "/",
+    href: "/depoimentos",
+    icon: RiChatQuoteLine,
   },
-
   {
     id: 5,
-    name: "Contacto",
     label: "Contacto",
-    href: "/",
+    href: "/contacto",
+    icon: RiPhoneLine,
   },
 ];
